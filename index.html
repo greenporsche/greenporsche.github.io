@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siddharth — AI × Math x Biology Researcher</title>
-    <meta name="description" content="High school researcher building mathematical frameworks for AI safety and computational biology. USAAIO Gold Medalist, Euler Circle, miRcore.">
+    <meta name="description"
+        content="High school researcher building mathematical frameworks for AI safety and computational biology. USAAIO Gold Medalist, Euler Circle, miRcore.">
     <style>
         :root {
             --primary: #0f172a;
@@ -19,7 +21,11 @@
             --code-bg: #f1f5f9;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
@@ -28,7 +34,11 @@
             background: var(--bg);
         }
 
-        .container { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
 
         /* ── Header ── */
         header {
@@ -69,13 +79,15 @@
             font-weight: 500;
         }
 
-        .header-links a:hover { text-decoration: underline; }
+        .header-links a:hover {
+            text-decoration: underline;
+        }
 
         /* ── Nav ── */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(8px);
             border-bottom: 1px solid var(--border);
             padding: 0.75rem 0;
@@ -96,12 +108,18 @@
             transition: color 0.15s;
         }
 
-        nav a:hover { color: var(--text); }
+        nav a:hover {
+            color: var(--text);
+        }
 
         /* ── Sections ── */
-        section { padding: 3.5rem 0; }
+        section {
+            padding: 3.5rem 0;
+        }
 
-        section + section { border-top: 1px solid var(--border); }
+        section+section {
+            border-top: 1px solid var(--border);
+        }
 
         section h2 {
             font-size: 1.1rem;
@@ -117,7 +135,9 @@
             margin-bottom: 2.5rem;
         }
 
-        .research-item:last-child { margin-bottom: 0; }
+        .research-item:last-child {
+            margin-bottom: 0;
+        }
 
         .research-item h3 {
             font-size: 1.2rem;
@@ -130,7 +150,9 @@
             text-decoration: none;
         }
 
-        .research-item h3 a:hover { color: var(--accent); }
+        .research-item h3 a:hover {
+            color: var(--accent);
+        }
 
         .research-meta {
             font-size: 0.85rem;
@@ -206,9 +228,16 @@
         }
 
         /* ── Education Timeline ── */
-        .timeline { display: grid; gap: 1.75rem; }
+        .timeline {
+            display: grid;
+            gap: 1.75rem;
+        }
 
-        .timeline-item { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; }
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 1rem;
+        }
 
         .timeline-year {
             font-size: 0.85rem;
@@ -272,7 +301,9 @@
             font-weight: 500;
         }
 
-        .contact-links a:hover { color: var(--accent); }
+        .contact-links a:hover {
+            color: var(--accent);
+        }
 
         footer .copyright {
             font-size: 0.8rem;
@@ -281,313 +312,334 @@
 
         /* ── Responsive ── */
         @media (max-width: 640px) {
-            header { padding: 3rem 0 2rem; }
-            header h1 { font-size: 1.6rem; }
-            .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
-            .skills-grid { grid-template-columns: 1fr; }
-            nav ul { gap: 1rem; }
+            header {
+                padding: 3rem 0 2rem;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>Siddharth</h1>
-        <p class="tagline">AI × Math x Biology Researcher</p>
-        <p class="intro">
-            I build mathematical frameworks for understanding when AI systems fail — and I'm applying
-            those tools to computational biology and medicine. Junior at MHHS,
-            Northern California.
-        </p>
-        <div class="header-links">
-            <a href="https://github.com/greenporsche">GitHub</a>
-            <a href="mailto:sisis.krishna@gmail.com">Email</a>
-            <!-- <a href="https://linkedin.com/in/">LinkedIn</a> -->
-        </div>
-    </div>
-</header>
-
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#competitions">Competitions</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#leadership">Leadership</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- ════════════════════════════════════════ RESEARCH ════════════════════════════════════════ -->
-<section id="research">
-    <div class="container">
-        <h2>Research</h2>
-
-        <div class="research-item">
-            <h3><a href="https://github.com/greenporsche/Directional-Collision-Principle">Directional Collision Principle</a></h3>
-            <div class="research-meta">Adversarial ML · Geometric Theory · 2024–Present</div>
-            <p>
-                A geometric framework for predicting adversarial vulnerability in neural networks.
-                Rather than relying on proximity to decision boundaries alone, DCP demonstrates that
-                vulnerability depends on the <em>alignment between perturbation direction and boundary
-                orientation</em>. Validated on OpenAI's interpretable sparse circuits across two
-                independent tasks.
+    <header>
+        <div class="container">
+            <h1>Siddharth</h1>
+            <p class="tagline">AI × Math x Biology Researcher</p>
+            <p class="intro">
+                I build mathematical frameworks for understanding when AI systems fail — and I'm applying
+                those tools to computational biology and medicine. Junior at MHHS,
+                CA.
             </p>
-            <div class="research-stats">
-                <span class="stat"><strong>87.5%</strong> prediction accuracy</span>
-                <span class="stat"><strong>100%</strong> recall (zero missed vulnerabilities)</span>
-                <span class="stat"><strong>15.5×</strong> attack efficiency over random</span>
-            </div>
-            <div class="tags">
-                <span class="tag">PyTorch</span>
-                <span class="tag">Adversarial ML</span>
-                <span class="tag">Lipschitz Analysis</span>
-                <span class="tag">Sparse Circuits</span>
+            <div class="header-links">
+                <a href="https://github.com/greenporsche">GitHub</a>
+                <a href="mailto:sisis.krishna@gmail.com">Email</a>
+                <!-- <a href="https://linkedin.com/in/">LinkedIn</a> -->
             </div>
         </div>
+    </header>
 
-        <div class="research-item">
-            <h3><a href="https://github.com/greenporsche/Tau-Collision-Short-Note">τ-Collision Theorem</a></h3>
-            <div class="research-meta">Pure Mathematics · Functional Analysis · 2024–Present</div>
-            <p>
-                The theoretical foundation underlying DCP. If a Lipschitz-continuous function acts on a
-                space equipped with an involution τ, collisions — points where A(v) = A(τ(v)) — must
-                exist, and their distance from any point is bounded below by the asymmetry gap divided
-                by L(1+K). Developed through three years of advanced mathematics at Euler Circle.
-            </p>
-            <div class="tags">
-                <span class="tag">Functional Analysis</span>
-                <span class="tag">Topology</span>
-                <span class="tag">Lipschitz Continuity</span>
-            </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="research-item">
-            <h3>Computational Genomics &amp; Personal Genome Analysis</h3>
-            <div class="research-meta">miRcore · University of Michigan HPC · Summer 2025</div>
-            <p>
-                Three workshops on Michigan's Great Lakes HPC cluster running NGS pipelines: Bowtie2
-                alignment, SAMtools/BCFtools variant calling, and IGV visualization. Analyzed SARS-CoV-2
-                patient samples to identify S-protein mutations. Sequenced and analyzed my own exome —
-                30 million reads mapped to phenotypes via ClinVar and GWAS databases.
-            </p>
-            <div class="tags">
-                <span class="tag">Bowtie2</span>
-                <span class="tag">SAMtools</span>
-                <span class="tag">BCFtools</span>
-                <span class="tag">IGV</span>
-                <span class="tag">HPC</span>
-            </div>
-        </div>
+    <!-- ════════════════════════════════════════ RESEARCH ════════════════════════════════════════ -->
+    <section id="research">
+        <div class="container">
+            <h2>Research</h2>
 
-        <div class="research-item">
-            <h3>Stability Analysis in Dynamical Systems</h3>
-            <div class="research-meta">Euler Circle IRPW · Summer 2024</div>
-            <p>
-                Independent research paper exploring stability analysis for linear and nonlinear
-                dynamical systems, with applications to robotics and control theory. Covered Lyapunov
-                methods, phase-plane analysis, and bifurcation theory.
-            </p>
-            <div class="tags">
-                <span class="tag">Dynamical Systems</span>
-                <span class="tag">Control Theory</span>
-                <span class="tag">Lyapunov Analysis</span>
+            <div class="research-item">
+                <h3><a href="https://github.com/greenporsche/Directional-Collision-Principle">Directional Collision
+                        Principle</a></h3>
+                <div class="research-meta">Adversarial ML · Geometric Theory · 2024–Present</div>
+                <p>
+                    A geometric framework for predicting adversarial vulnerability in neural networks.
+                    Rather than relying on proximity to decision boundaries alone, DCP demonstrates that
+                    vulnerability depends on the <em>alignment between perturbation direction and boundary
+                        orientation</em>. Validated on OpenAI's interpretable sparse circuits across two
+                    independent tasks.
+                </p>
+                <div class="research-stats">
+                    <span class="stat"><strong>87.5%</strong> prediction accuracy</span>
+                    <span class="stat"><strong>100%</strong> recall (zero missed vulnerabilities)</span>
+                    <span class="stat"><strong>15.5×</strong> attack efficiency over random</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Adversarial ML</span>
+                    <span class="tag">Lipschitz Analysis</span>
+                    <span class="tag">Sparse Circuits</span>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- ════════════════════════════════════ COMPETITIONS ═══════════════════════════════════════ -->
-<section id="competitions">
-    <div class="container">
-        <h2>Competitions &amp; Awards</h2>
-        <div class="competition-grid">
-            <div class="competition-item">
-                <span class="icon">🥇</span>
-                <div class="details">
-                    <h4>Gold Medal — USA AI Olympiad 2025</h4>
-                    <p>National competition hosted at MIT. First year of USAAIO.</p>
+            <div class="research-item">
+                <h3><a href="https://github.com/greenporsche/Tau-Collision-Short-Note">τ-Collision Theorem</a></h3>
+                <div class="research-meta">Pure Mathematics · Functional Analysis · 2024–Present</div>
+                <p>
+                    The theoretical foundation underlying DCP. If a Lipschitz-continuous function acts on a
+                    space equipped with an involution τ, collisions — points where A(v) = A(τ(v)) — must
+                    exist, and their distance from any point is bounded below by the asymmetry gap divided
+                    by L(1+K). Developed through three years of advanced mathematics at Euler Circle.
+                </p>
+                <div class="tags">
+                    <span class="tag">Functional Analysis</span>
+                    <span class="tag">Topology</span>
+                    <span class="tag">Lipschitz Continuity</span>
                 </div>
             </div>
-            <div class="competition-item">
-                <span class="icon">🎖️</span>
-                <div class="details">
-                    <h4>Distinguished Honor Roll — USA AI Olympiad 2026</h4>
-                    <p>Scored 247/300 on Round 1 (cutoff: 98/300). Round 2 to be held at MIT, April 4–5, 2026.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">📐</span>
-                <div class="details">
-                    <h4>2× AIME Qualifier</h4>
-                    <p>American Invitational Mathematics Examination.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">💯</span>
-                <div class="details">
-                    <h4>PSAT 10: 1460/1520</h4>
-                    <p>99th percentile both sections (ELA: 700/760, Math: 760/760).</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">🏅</span>
-                <div class="details">
-                    <h4>MATHCOUNTS State — Perfect Score Award</h4>
-                    <p>2023 California State Math Olympiad.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">📝</span>
-                <div class="details">
-                    <h4>2× CAASPP Perfect Score</h4>
-                    <p>California state standardized testing.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ═════════════════════════════════════ EDUCATION ═════════════════════════════════════════ -->
-<section id="education">
-    <div class="container">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="timeline-year">2023–Present</span>
-                <div class="timeline-content">
-                    <h4>Euler Circle</h4>
-                    <p>
-                        Three years of proof-based mathematics: Transition to Proofs,
-                        Fundamentals of Higher Mathematics, Independent Research Paper Writing (IRPW).
-                        Topics: algebraic combinatorics, real analysis, point-set topology, linear algebra.
-                    </p>
+            <div class="research-item">
+                <h3>Computational Genomics &amp; Personal Genome Analysis</h3>
+                <div class="research-meta">miRcore · University of Michigan HPC · Summer 2025</div>
+                <p>
+                    Three workshops on Michigan's Great Lakes HPC cluster running NGS pipelines: Bowtie2
+                    alignment, SAMtools/BCFtools variant calling, and IGV visualization. Analyzed SARS-CoV-2
+                    patient samples to identify S-protein mutations. Sequenced and analyzed my own exome —
+                    30 million reads mapped to phenotypes via ClinVar and GWAS databases.
+                </p>
+                <div class="tags">
+                    <span class="tag">Bowtie2</span>
+                    <span class="tag">SAMtools</span>
+                    <span class="tag">BCFtools</span>
+                    <span class="tag">IGV</span>
+                    <span class="tag">HPC</span>
                 </div>
             </div>
-            <div class="timeline-item">
-                <span class="timeline-year">2023–Present</span>
-                <div class="timeline-content">
-                    <h4>MHHS</h4>
-                    <p>
-                        Junior · Weighted GPA: 4.78 · Dual PLTW pathways: Biomedical Sciences +
-                        Engineering. Self-studied AP Calc BC (5), AP Stats (5), AP CS A (4) in 9th grade.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-year">2023–Present</span>
-                <div class="timeline-content">
-                    <h4>Dual Enrollment — 5 Community Colleges</h4>
-                    <p>
-                        San Joaquin Delta, Evergreen Valley, Laney, Contra Costa, and El Camino.
-                        Coursework: Multivariable Calculus, Discrete Structures, Data Science,
-                        Data Structures, SICP, Political Science, World History, Italian.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-year">Summer 2025</span>
-                <div class="timeline-content">
-                    <h4>miRcore — Computational Biology</h4>
-                    <p>
-                        Three-workshop intensive on Michigan's HPC cluster. NGS pipelines,
-                        variant calling, personal exome analysis.
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-year">2022–2023</span>
-                <div class="timeline-content">
-                    <h4>QubitxQubit — Introduction to Quantum Computing</h4>
-                    <p>Offered by MIT and IBM. Special approval to enroll as an 8th grader.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-year">2021–2022</span>
-                <div class="timeline-content">
-                    <h4>Johns Hopkins CTY</h4>
-                    <p>Gifted identification. Coursework: "Be a Doctor," Competitive Mathematics.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ═════════════════════════════════════ LEADERSHIP ═════════════════════════════════════════ -->
-<section id="leadership">
-    <div class="container">
-        <h2>Leadership &amp; Teaching</h2>
-        <div class="competition-grid">
-            <div class="competition-item">
-                <span class="icon">🎓</span>
-                <div class="details">
-                    <h4>Section Leader — Stanford "Code in Place"</h4>
-                    <p>Teaching assistant for Stanford's global introductory CS course. Led weekly sections guiding students through Python fundamentals.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">🧮</span>
-                <div class="details">
-                    <h4>Assistant Coach — Math Olympiad Team, Questa Elementary</h4>
-                    <p>Coaching elementary students in competition mathematics and problem-solving strategies.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">🚣</span>
-                <div class="details">
-                    <h4>Junior Coach — Delta Sculling Center</h4>
-                    <p>Coaching youth rowers in technique and competitive preparation.</p>
-                </div>
-            </div>
-            <div class="competition-item">
-                <span class="icon">➕</span>
-                <div class="details">
-                    <h4>Vice President — MHHS Math Club</h4>
-                    <p>Organizing competitions, leading practice sessions, and managing club events.</p>
+            <div class="research-item">
+                <h3>Stability Analysis in Dynamical Systems</h3>
+                <div class="research-meta">Euler Circle IRPW · Summer 2024</div>
+                <p>
+                    Independent research paper exploring stability analysis for linear and nonlinear
+                    dynamical systems, with applications to robotics and control theory. Covered Lyapunov
+                    methods, phase-plane analysis, and bifurcation theory.
+                </p>
+                <div class="tags">
+                    <span class="tag">Dynamical Systems</span>
+                    <span class="tag">Control Theory</span>
+                    <span class="tag">Lyapunov Analysis</span>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════ SKILLS ═══════════════════════════════════════════ -->
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-group">
-                <h4>Programming</h4>
-                <p>Python, Java, Qiskit</p>
-            </div>
-            <div class="skill-group">
-                <h4>ML &amp; AI</h4>
-                <p>PyTorch, scikit-learn, adversarial ML, sparse circuits</p>
-            </div>
-            <div class="skill-group">
-                <h4>Data &amp; Bio</h4>
-                <p>NumPy, Pandas, Matplotlib, Seaborn, Bowtie2, SAMtools, BCFtools, IGV, ClinVar</p>
-            </div>
-            <div class="skill-group">
-                <h4>Mathematics</h4>
-                <p>Number Theory, Combinatorics, Linear Algebra, Real Analysis, Point-set Topology, Functional Analysis</p>
+    <!-- ════════════════════════════════════ COMPETITIONS ═══════════════════════════════════════ -->
+    <section id="competitions">
+        <div class="container">
+            <h2>Competitions &amp; Awards</h2>
+            <div class="competition-grid">
+                <div class="competition-item">
+                    <span class="icon">🥇</span>
+                    <div class="details">
+                        <h4>Gold Medal — USA AI Olympiad 2025</h4>
+                        <p>National competition hosted at MIT. First year of USAAIO.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">🎖️</span>
+                    <div class="details">
+                        <h4>Distinguished Honor Roll — USA AI Olympiad 2026</h4>
+                        <p>Scored 247/300 on Round 1 (cutoff: 98/300). Round 2 to be held at MIT, April 4–5, 2026.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">📐</span>
+                    <div class="details">
+                        <h4>2× AIME Qualifier</h4>
+                        <p>American Invitational Mathematics Examination.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">💯</span>
+                    <div class="details">
+                        <h4>PSAT 10: 1460/1520</h4>
+                        <p>99th percentile both sections (ELA: 700/760, Math: 760/760).</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">🏅</span>
+                    <div class="details">
+                        <h4>MATHCOUNTS State — Perfect Score Award</h4>
+                        <p>2023 California State Math Olympiad.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">📝</span>
+                    <div class="details">
+                        <h4>2× CAASPP Perfect Score</h4>
+                        <p>California state standardized testing.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ══════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
-<footer>
-    <div class="container">
-        <div class="contact-links">
-            <a href="https://github.com/greenporsche">GitHub</a>
-            <a href="mailto:sisis.krishna@gmail.com">Email</a>
-            <!-- <a href="https://linkedin.com/in/">LinkedIn</a> -->
+    <!-- ═════════════════════════════════════ EDUCATION ═════════════════════════════════════════ -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2023–Present</span>
+                    <div class="timeline-content">
+                        <h4>Euler Circle</h4>
+                        <p>
+                            Three years of proof-based mathematics: Transition to Proofs,
+                            Fundamentals of Higher Mathematics, Independent Research Paper Writing (IRPW).
+                            Topics: algebraic combinatorics, real analysis, point-set topology, linear algebra.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2023–Present</span>
+                    <div class="timeline-content">
+                        <h4>MHHS</h4>
+                        <p>
+                            Junior · Weighted GPA: 4.78 · Dual PLTW pathways: Biomedical Sciences +
+                            Engineering. Self-studied AP Calc BC (5), AP Stats (5), AP CS A (4) in 9th grade.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2023–Present</span>
+                    <div class="timeline-content">
+                        <h4>Dual Enrollment — 5 Community Colleges</h4>
+                        <p>
+                            San Joaquin Delta, Evergreen Valley, Laney, Contra Costa, and El Camino.
+                            Coursework: Multivariable Calculus, Discrete Structures, Data Science,
+                            Data Structures, SICP, Political Science, World History, Italian.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">Summer 2025</span>
+                    <div class="timeline-content">
+                        <h4>miRcore — Computational Biology</h4>
+                        <p>
+                            Three-workshop intensive on Michigan's HPC cluster. NGS pipelines,
+                            variant calling, personal exome analysis.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2022–2023</span>
+                    <div class="timeline-content">
+                        <h4>QubitxQubit — Introduction to Quantum Computing</h4>
+                        <p>Offered by MIT and IBM. Special approval to enroll as an 8th grader.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2021–2022</span>
+                    <div class="timeline-content">
+                        <h4>Johns Hopkins CTY</h4>
+                        <p>Gifted identification. Coursework: "Be a Doctor," Competitive Mathematics.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="copyright">&copy; 2026 Siddharth</p>
-    </div>
-</footer>
+    </section>
+
+    <!-- ═════════════════════════════════════ LEADERSHIP ═════════════════════════════════════════ -->
+    <section id="leadership">
+        <div class="container">
+            <h2>Leadership &amp; Teaching</h2>
+            <div class="competition-grid">
+                <div class="competition-item">
+                    <span class="icon">🎓</span>
+                    <div class="details">
+                        <h4>Section Leader — Stanford "Code in Place"</h4>
+                        <p>Teaching assistant for Stanford's global introductory CS course. Led weekly sections guiding
+                            students through Python fundamentals.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">➕</span>
+                    <div class="details">
+                        <h4>Vice President — MHHS Math Club</h4>
+                        <p>Organizing competitions, leading practice sessions, and managing club events.</p>
+                    </div>
+                </div>
+
+                <div class="competition-item">
+                    <span class="icon">🧮</span>
+                    <div class="details">
+                        <h4>Assistant Coach — Math Olympiad Team, Questa Elementary</h4>
+                        <p>Coaching elementary students in competition mathematics and problem-solving strategies.</p>
+                    </div>
+                </div>
+                <div class="competition-item">
+                    <span class="icon">🚣</span>
+                    <div class="details">
+                        <h4>Junior Coach — Delta Sculling Center</h4>
+                        <p>Coaching youth rowers in technique and competitive preparation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ SKILLS ═══════════════════════════════════════════ -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Programming</h4>
+                    <p>Python, Java, Qiskit</p>
+                </div>
+                <div class="skill-group">
+                    <h4>ML &amp; AI</h4>
+                    <p>PyTorch, scikit-learn, adversarial ML, sparse circuits</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Data &amp; Bio</h4>
+                    <p>NumPy, Pandas, Matplotlib, Seaborn, Bowtie2, SAMtools, BCFtools, IGV, ClinVar</p>
+                </div>
+                <div class="skill-group">
+                    <h4>Mathematics</h4>
+                    <p>Number Theory, Combinatorics, Linear Algebra, Real Analysis, Point-set Topology, Functional
+                        Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════ FOOTER ═══════════════════════════════════════════ -->
+    <footer>
+        <div class="container">
+            <div class="contact-links">
+                <a href="https://github.com/greenporsche">GitHub</a>
+                <a href="mailto:sisis.krishna@gmail.com">Email</a>
+                <!-- <a href="https://linkedin.com/in/">LinkedIn</a> -->
+            </div>
+            <p class="copyright">&copy; 2026 Siddharth</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>

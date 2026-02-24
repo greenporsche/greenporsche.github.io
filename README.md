@@ -2,7 +2,7 @@
 
 Personal portfolio and research site.
 
-**Siddharth** — AI × Biology Researcher ·  High School Junior · Northern California
+**Siddharth** — AI × Biology Researcher ·  High School Junior · CA
 
 ## About
 
