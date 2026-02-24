@@ -2,11 +2,11 @@
 
 Personal portfolio and research site.
 
-**Siddharth Krishna** — AI × Biology Researcher · Junior at Mountain House High School · Northern California
+**Siddharth Krishna** — AI × Biology Researcher ·  High School Junior · Northern California
 
 ## About
 
-This site showcases my research, competitions, education, and leadership. Built as a single-page static site — no frameworks, no build step.
+This site showcases my research, competitions, education, and leadership.
 
 ## Links
 
